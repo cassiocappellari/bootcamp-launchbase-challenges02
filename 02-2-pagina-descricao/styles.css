@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+:root {
+    --main-color: #50fa7b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 32px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--main-color);
+    transition: color 200ms;
+}
+
+.middle-content {
+    text-align: center;
+    padding: 32px;
+}
+
+.middle-content img {
+    border-radius: 50%;
+    border: 5px solid var(--main-color);
+    height: 250px;
+    width: 250px;
+}
+
+.middle-content h1 {
+    color: var(--main-color);
+    font-size: 48px;
+    line-height: 58px;
+    margin: 20px;
+}
+
+.middle-content h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 34px;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.middle-content p {
+    margin: 0 auto 16px auto;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.middle-content ul {
+    padding: 8px;
+    margin-top: 40px;
+}
+
+.middle-content ul li {
+    padding: 8px;
+    list-style-type: none;
+}
+
+#footer-content {
+    padding: 30px;
+    margin-bottom: 8px;
+}
