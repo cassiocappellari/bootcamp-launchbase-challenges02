@@ -44,7 +44,7 @@ header {
     padding: 32px;
 }
 
-.middle-content img {
+.middle-content #logo-rocketseat {
     border-radius: 50%;
     border: 5px solid var(--main-color);
     height: 250px;
@@ -85,4 +85,71 @@ header {
 #footer-content {
     padding: 30px;
     margin-bottom: 8px;
+}
+
+#conteudos-title {
+    margin-top: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.card#starter {
+    border-color: rgb(133, 89, 193);
+}
+
+.card#launchbase {
+    border-color: rgb(253, 149, 31);
+}
+
+.card#gostack {
+    border-color: rgb(4, 211, 97);
+}
+
+.card h2 {
+    margin-top: 32px;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.card#starter h2 {
+    color: rgb(133, 89, 193);
+}
+
+.card#launchbase h2 {
+    color: rgb(253, 149, 31);
+}
+
+.card#gostack h2 {
+    color: rgb(4, 211, 97);
+}
+
+.card p {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.cards img {
+    width: 160px;
+    height: 160px;
+    margin-top: 32px;
+}
+
+.cards .card:hover {
+    opacity: 0.7;
 }
