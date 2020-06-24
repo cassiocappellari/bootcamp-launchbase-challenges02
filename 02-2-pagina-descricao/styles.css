@@ -23,12 +23,17 @@ header {
 }
 
 .menu {
-    text-align: center;
+    text-align: left;
+    display: flex;
+}
+
+.menu img {
+    margin-right: 32px;
 }
 
 .menu a {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 34px;
     margin: 0 32px;
     color: white;
     text-decoration: none;
@@ -36,65 +41,97 @@ header {
 
 .menu a:hover {
     color: var(--main-color);
-    transition: color 200ms;
+    border-bottom: 1px solid var(--main-color);
+    transition: 400ms;
+}
+
+.menu .media-contact {
+    margin-left: 300px;
+}
+
+.menu .media-contact i {
+    height: 18px;
+    margin: 0px 0px 0px 20px;
+}
+
+.menu .media-contact #login {
+    align-items: center;
+    color: var(--main-color);
+    border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    position: relative;
+    top: -5;
+    bottom: 5px;
+}
+
+.menu .media-contact #login:hover{
+    opacity: 0.7;
 }
 
 .middle-content {
     text-align: center;
     padding: 32px;
-}
-
-.middle-content #logo-rocketseat {
-    border-radius: 50%;
-    border: 5px solid var(--main-color);
-    height: 250px;
-    width: 250px;
-}
-
-.middle-content h1 {
-    color: var(--main-color);
-    font-size: 48px;
-    line-height: 58px;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .middle-content h2 {
-    margin-bottom: 16px;
-    font-size: 24px;
-    line-height: 34px;
+    text-align: left;
+    font-size: 36px;
+    line-height: 48px;
     opacity: 0.8;
     font-weight: normal;
+    max-width: 500px;
+    margin: 30px 0 16px 120px;
 }
 
 .middle-content p {
-    margin: 0 auto 16px auto;
-    max-width: 600px;
-    font-size: 16px;
+    text-align: left;
+    margin: 0 0 48px 120px;
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 32px;
 }
 
-.middle-content ul {
-    padding: 8px;
+.middle-content a {
+    margin-right: 148px;
+    align-items: center;
+    color: var(--main-color);
+    border: 1px solid;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.middle-content a:hover {
+    opacity: 0.7;
+}
+
+.middle-content .background {
+    margin: 50px 0px 0 0;
+}
+
+.middle-content .background img {
+    height: 52vh;
+}
+
+.middle-content .content #green {
+    color: var(--main-color)
+}
+
+.cards-content {
     margin-top: 40px;
 }
 
-.middle-content ul li {
-    padding: 8px;
-    list-style-type: none;
-}
-
-#footer-content {
-    padding: 30px;
-    margin-bottom: 8px;
-}
-
-#conteudos-title {
-    margin-top: 0;
-}
-
-.cards {
+.cards-content .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
+    gap: 100px;
     max-width: 900px;
     height: 420px;
     margin: 0 auto;
@@ -120,6 +157,7 @@ header {
 }
 
 .card h2 {
+    text-align: center;
     margin: 32px;
     font-size: 32px;
     line-height: 42px;
@@ -139,6 +177,7 @@ header {
 }
 
 .card p {
+    text-align: center;
     margin: 16px auto;
     font-size: 12px;
     border: 1px solid;
@@ -163,6 +202,7 @@ header {
 }
 
 .cards img {
+    margin-left: 36px;
     width: 160px;
     height: 160px;
     margin-top: 32px;
